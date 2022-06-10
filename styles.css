@@ -20,3 +20,13 @@ h1 {
     color: #fff;
     background-color: #025157;
 }
+
+.capterra-logo {
+    display: block;
+    max-width: 500px;
+}
+
+.capterra-img {
+    display: block;
+    min-width: 700px;
+}
