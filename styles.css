@@ -30,14 +30,24 @@ h1 {
 
 .capterra-img {
     display: block;
-    min-width: 700px;
+    max-width: 720px;
+}
+
+.fixed-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #fffbf7;
 }
 
 .header {
-    margin: 40px 20px 0;
+    margin: 20px 20px 0;
     font-size: 0;
     font-family: sans-serif;
     height: 45px;
+    display: flex;
+    align-items: center;
 }
 
 .header > * {
@@ -45,7 +55,7 @@ h1 {
     font-size: 16px;
     vertical-align: middle;
     height: 100%;
-    line-height: 45px;
+    /* line-height: 45px; */
 }
 
 .logo {
@@ -93,6 +103,51 @@ h1 {
 }
 
 .main {
-    margin-top: 140px;
-    text-align: center;
+    margin-top: 285px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.publish h3 {
+    font-family: 'Fascinate', cursive;
+    font-size: 40px;
+    line-height: 48px;
+    color: #025157;
+}
+
+.publish > p {
+    font-size: 16px;
+    color: #343434;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.publish > form {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.publish > form p {
+    color: #025157;
+}
+
+.promo-video {
+    display: flex;
+    width: 70%;
+    margin: 100px auto;
+    align-items: center;
+    gap: 20px;
+}
+
+.explanatory-video {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.explanatory-video img {
+    width: 120px;
+    margin-top: 10px;
 }
