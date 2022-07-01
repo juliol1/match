@@ -1,0 +1,95 @@
+/** main.scss */
+@use 'global' as *;
+
+.blog {
+    background-color: $white;
+    max-width: unset;
+    padding: 5% 10%;
+
+    .title {
+        @extend %base-title;
+    }
+
+    .process-list {
+        margin-top: 40px;
+        margin-bottom: 36px;
+
+        .process {
+            margin-bottom: 25px;
+            & > div {
+                & > h3 {
+                    color: $dark-green-title;
+                    margin-bottom: 0;
+                    font-size: 30px;
+                    font-weight: 500;
+                }
+                & > p {
+                    color: $dark-green-text;
+                    margin: 0;
+                }
+            }
+            .process-icon {
+                width: 60px;
+                height: 60px;
+                margin-right: 10px;
+                text-align: center;
+
+                img {
+                    height: 100%;
+                }
+            }
+        }
+    }
+
+    button {
+        height: auto;
+        border-radius: 8px;
+        padding: 12px;
+        width: 180px;
+        margin-bottom: 15px;
+    }
+
+    .card {
+        color: $grey;
+
+        &-title {
+            font-size: 24px;
+        }
+
+        &-text {
+            line-height: 1.5em;
+            min-height: 6em;
+            font-size: 18px;
+
+            .read-more {
+                text-decoration: underline;
+            }
+        }
+
+        .category {
+            color: $light-green;
+            font-size: 14px;
+        }
+
+        .read-time {
+            color: $light-grey;
+            font-size: 14px;
+        }
+
+        .author {
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 18px;
+
+            & > p {
+                margin-bottom: 0;
+            }
+
+            & > img {
+                width: 35px;
+                border-radius: 50%;
+            }
+        }
+    }
+}

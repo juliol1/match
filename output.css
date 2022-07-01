@@ -1,0 +1,81 @@
+.blog .title {
+  font-family: "Alegreya", serif;
+  color: #135359;
+}
+
+/** main.scss */
+.blog {
+  background-color: #ffffff;
+  max-width: unset;
+  padding: 5% 10%;
+}
+.blog .process-list {
+  margin-top: 40px;
+  margin-bottom: 36px;
+}
+.blog .process-list .process {
+  margin-bottom: 25px;
+}
+.blog .process-list .process > div > h3 {
+  color: #025157;
+  margin-bottom: 0;
+  font-size: 30px;
+  font-weight: 500;
+}
+.blog .process-list .process > div > p {
+  color: #135359;
+  margin: 0;
+}
+.blog .process-list .process .process-icon {
+  width: 60px;
+  height: 60px;
+  margin-right: 10px;
+  text-align: center;
+}
+.blog .process-list .process .process-icon img {
+  height: 100%;
+}
+.blog button {
+  height: auto;
+  border-radius: 8px;
+  padding: 12px;
+  width: 180px;
+  margin-bottom: 15px;
+}
+.blog .card {
+  color: #4a4a4a;
+}
+.blog .card-title {
+  font-size: 24px;
+}
+.blog .card-text {
+  line-height: 1.5em;
+  min-height: 6em;
+  font-size: 18px;
+}
+.blog .card-text .read-more {
+  text-decoration: underline;
+}
+.blog .card .category {
+  color: #67b54b;
+  font-size: 14px;
+}
+.blog .card .read-time {
+  color: #979797;
+  font-size: 14px;
+}
+.blog .card .author {
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+.blog .card .author > p {
+  margin-bottom: 0;
+}
+.blog .card .author > img {
+  width: 35px;
+  border-radius: 50%;
+}
+
+/*# sourceMappingURL=output.css.map */
