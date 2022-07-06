@@ -255,51 +255,61 @@ h1 {
     max-width: 100%;
 }
 
-.carousel-card {
-    min-height: 600px;
+.card {
     max-width: 370px;
     width: 100%;
+    min-height: 450px;
     margin: 0 auto;
 }
-.carousel-card-img {
-    max-height: 30vh;
-    height: 100%;
-}
 
-.carousel-card-img img {
+.card > img {
     max-height: 30vh;
-    height: 100%;
-    width: 100%;
     object-fit: cover;
 }
 
-/* .carousel-card-logo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 80px;
-    height: 60px;
-    border-radius: 50%;
-} */
-
-.carousel-card-logo img {
-    width: 80px;
-    height: 60px;
-    border-radius: 50%;
-    object-fit: contain;
-    display: block;
-    z-index: 10;
+.card-circle {
     position: absolute;
-    top: 123px;
-    background-color: orange;
-    right: 20px;
+    right: 16px;
+    top: -30px;
 }
 
-.card-content {
-    background-color: #fff;
-    padding: 10px;
+.card-circle img {
+    border-radius: 50%;
+    width: 55px;
+}
+
+.card-body {
     max-width: 370px;
     width: 100%;
+    padding: 40px 1rem 1rem;
+    position: relative;
+}
+
+.card-title {
+    color: #67b54b;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    margin-bottom: 12px;
+    font-family: 'Slabo 27px', serif;
+}
+
+.card-subtitle {
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+
+.card-footer {
+    padding: 0;
+}
+
+.card-footer > button {
+    width: 100%;
+    height: 55px;
+    background-color: #21517a;
+    color: white;
 }
 
 @media (max-width: 991px) {

@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Alegreya", serif;
+}
+
+.navbar {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 14px;
+  align-items: center;
+}
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+.navbar-left .navbar-img {
+  width: 30px;
+}
+.navbar-left span {
+  color: #025157;
+  margin-left: 6px;
+  font-weight: 600;
+  font-size: 1.8rem;
+}
+.navbar-list {
+  list-style: none;
+  display: flex;
+}
+.navbar-list__item {
+  font-size: 1.4rem;
+  color: #979797;
+}
+.navbar-list__item:hover {
+  cursor: pointer;
+  color: #4a4a4a;
+}
+.navbar-list__item:not(:last-child) {
+  margin-right: 20px;
+}
+.navbar-cta__a {
+  text-decoration: underline;
+  color: #67b54b;
+  font-size: 1.4rem;
+}
+.navbar-cta__a:hover {
+  cursor: pointer;
+}
+.navbar-cta__button {
+  font-size: 1.4rem;
+  border: none;
+  background-color: #67b54b;
+  padding: 12px 14px;
+  border: 0;
+  border-radius: 5px;
+  color: white;
+  margin-left: 8px;
+}
+.navbar-cta__button:hover {
+  cursor: pointer;
+}
+
+.features {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: 5rem;
+}
+.features-title {
+  font-size: 2.4rem;
+  color: #025157;
+  margin-bottom: 1rem;
+}
+.features-subtitle {
+  font-size: 1.4rem;
+  margin-bottom: 3rem;
+}
+.features .animation {
+  position: relative;
+  height: 2rem;
+}
+.features-arrow {
+  width: 4rem;
+  position: absolute;
+  transform: rotate(-90deg);
+  animation: goDown 2s infinite alternate-reverse;
+}
+.features-arrow:hover {
+  cursor: pointer;
+}
+@keyframes goDown {
+  0% {
+    top: 0;
+  }
+  25% {
+    top: 10px;
+  }
+  50% {
+    top: 20px;
+  }
+  75% {
+    top: 30px;
+  }
+  100% {
+    top: 0;
+  }
+}
+.features-cards--container {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5% 10%;
+  font-size: 1.4rem;
+}
+.features-cards--container .features-card {
+  max-width: 25rem;
+}
+.features-cards--container .features-card__image {
+  margin-bottom: 2rem;
+  width: 100%;
+}
+.features-cards--container .features-card__content--title {
+  margin-bottom: 2rem;
+  transition: color 0.3s ease-in-out, transform 0.6s;
+}
+.features-cards--container .features-card__content--title:hover {
+  color: #67b54b;
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+@media (max-width: 985px) {
+  .features-cards--container {
+    flex-direction: column;
+  }
+}
+
+/*# sourceMappingURL=aboutus.css.map */
